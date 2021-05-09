@@ -56,7 +56,7 @@ exports.handler = async function(event) {
         year: movies.startYear,
         genre: movies.genres
       }
-      
+
       // add results from if loop of to the movies array including primary title, year movie release, movie genres 
       
       returnValue.movies.push(postObject)
@@ -70,4 +70,5 @@ exports.handler = async function(event) {
       body: JSON.stringify(returnValue) // a string of data
     }
   }
+  
 }
